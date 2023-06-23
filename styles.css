@@ -29,6 +29,7 @@ body {
 
 .img {
   max-width: 100%;
+  transition: all ease 0.3s;
 }
 
 .article-body {
@@ -47,6 +48,16 @@ body {
   text-decoration: none;
   color: #28666e;
 }
-.article-para{
-  font-family: "figtree",sans-serif;
+.article-para {
+  font-family: 'figtree', sans-serif;
+}
+.article-title:hover {
+  color: #28666e;
+}
+.img:hover {
+  transform: scale(1.1);
+}
+.img:hover+.article-title{
+  color: #28666e;
+
 }
