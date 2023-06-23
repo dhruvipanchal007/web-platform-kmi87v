@@ -11,61 +11,29 @@ body{
   min-height: 100vh;
 }
 .articles{
-  display:flex;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 24px;
+  display: flex;
+  flex-wrap: wrap;
 }
-article {
-  position: relative;
+.article-wrapper{
+  background-color: #fff;
   border-radius: 16px;
-  box-shadow: none;
-  background: #fff;
-  transform-origin: center;
-  transition: all ease 0.4s;
-  overflow: hidden;
+
 }
-article a::after {
-  content: '';
-  position: absolute;
-  inset-block: 0;
-  inset-inline: 0;
-  cursor: pointer;
-}
-article h2 {
-  margin: 0 0 18px 0;
-  font-family: 'Bebas Neue';
-  font-size: 1.9rem;
-  letter-spacing: 0.06em;
-  color: black;
-  transition: all 0.3s ease-in-out;
-}
-figure {
-  margin: 0;
-  padding: 0;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-}
-article img {
-  transform-origin: center;
-  max-width: 100%;
-  transform: scale(1.001);
+
+img{
+  max-width: 565px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .article-body{
   padding: 24px;
 }
-article a{
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
- color: #28666e;
-  
-}
-@container card (min-width:380px){
-  .article-wrapper{
-    display:grid;
-    }
-    .article-body{
-      padding-left:0;
-    }
+.article-wrapper h2{
+  margin: 0 0 18px 0;
+  font-family: "bebas neue",cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: black;
+
+
 }
