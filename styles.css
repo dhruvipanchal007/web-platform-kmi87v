@@ -1,7 +1,21 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  margin: 0;
+  padding: 48px 0;
+  font-family: "figtree",sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-image: linear-gradient(45deg,#7c9885,#b5b682);
+  min-height: 100vh;
+}
+.articles{
+  display:flex;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
 article {
   position: relative;
   border-radius: 16px;
@@ -32,10 +46,26 @@ figure {
   aspect-ratio: 16/9;
   overflow: hidden;
 }
-article img{
-transform-origin: center;
+article img {
+  transform-origin: center;
   max-width: 100%;
-transform: scale(1.001);
-
-
+  transform: scale(1.001);
+}
+.article-body{
+  padding: 24px;
+}
+article a{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+ color: #28666e;
+  
+}
+@container card (min-width:380px){
+  .article-wrapper{
+    display:grid;
+    }
+    .article-body{
+      padding-left:0;
+    }
 }
