@@ -57,7 +57,19 @@ body {
 .img:hover {
   transform: scale(1.1);
 }
-.img:hover+.article-title{
+.img:hover ~ .article-body .article-title {
   color: #28666e;
+}
+@media (min-width: 450px) and (max-width:838px){
+  .article-wrapper {
+    max-width: 800px;
+    height: 100px;
 
+    display: flex;
+    flex-direction: row;
+  }
+  .article-para
+  {
+    display: none;
+  }
 }
