@@ -60,16 +60,14 @@ body {
 .img:hover ~ .article-body .article-title {
   color: #28666e;
 }
-@media (min-width: 450px) and (max-width:838px){
+@media (min-width: 450px) and (max-width: 838px) {
   .article-wrapper {
     max-width: 800px;
     height: 100px;
-
     display: flex;
     flex-direction: row;
   }
-  .article-para
-  {
+  .article-para {
     display: none;
   }
 }
